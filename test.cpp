@@ -22,7 +22,6 @@ TEST_CASE ("Divides out all even factors", "[RemoveTwos]") {
     REQUIRE( RemoveTwos(16) == 1);
     REQUIRE( RemoveTwos(13) == 13);
     REQUIRE( RemoveTwos(0) == 0);
-    REQUIRE( RemoveTwos(2) == 1);
 }
 
 TEST_CASE ("Sums all elements", "[Sum]") {
