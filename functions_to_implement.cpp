@@ -38,7 +38,7 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b);
 // (16 = 2 * 2 * 2 * 2 * 1 -> 1, 7 -> 7, 26 = 2 * 13 -> 13, 52 = 2 * 2 * 13 -> 13)
 int RemoveTwos(int original) {
 	int curr = original;
-	while (curr % 2 == 0) {
+	while (curr % 2 == 0 && curr > 0) {
 		curr = curr / 2;
 	}
 	return curr;
@@ -56,7 +56,7 @@ std::vector<bool> OddMask(std::vector<int>);
 // Sums all numbers in a vector and returns the resulting value
 int Sum(std::vector<int> nums) {
 	int acc = 0;
-	for (int i = 0; i < nums.size(); i++) {
+	for (long unsigned int i = 0; i < nums.size(); i++) {
 		acc += nums.at(i);
 	}
 	return acc;
