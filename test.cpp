@@ -21,6 +21,7 @@ TEST_CASE ("Strings are split", "[split]") {
 TEST_CASE ("Divides out all even factors", "[RemoveTwos]") {
     REQUIRE( RemoveTwos(16) == 1);
     REQUIRE( RemoveTwos(13) == 13);
+    REQUIRE( RemoveTwos(0) == 0);
 }
 
 TEST_CASE ("Sums all elements", "[Sum]") {
