@@ -17,3 +17,5 @@ jobs:
       run: make
     - name: run executable
       run: ./test
+    - name: make
+      run: make clean
